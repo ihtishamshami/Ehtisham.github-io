@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sheikh Ehtisham Ur Rehman - Portfolio{% endblock %}</title>
+    <meta name="description" content="Portfolio of Sheikh Ehtisham Ur Rehman - Computer Engineer & AI Specialist">
+    <meta name="keywords" content="AI, Machine Learning, Computer Engineer, Software Developer, Portfolio">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    
+    <script src="{% static 'js/portfolio.js' %}"></script>
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>
